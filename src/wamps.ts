@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import path from 'path';
 import fs from 'fs-extra';
 
@@ -18,8 +19,8 @@ console.log('\x1b[36m———————————————————�
 
 // Logging the script names and commands with some simple colors and even spacing
 for (const scriptName in scriptsObj) {
-  let numSpaces = Math.abs(scriptName.length - longest) + 1;
-  let spaces = ' '.repeat(numSpaces);
+  const numSpaces = Math.abs(scriptName.length - longest) + 1;
+  const spaces = ' '.repeat(numSpaces);
   console.log(
     `\x1b[33m${scriptName}${spaces}|  \x1b[32m${scriptsObj[scriptName]}`
   );

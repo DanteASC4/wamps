@@ -2,14 +2,15 @@
   "compilerOptions": {
     "target": "es5",
     "moduleResolution": "node",
-    "outDir": "./dist",
+    "outDir": "./bin",
     "rootDir": "./src",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "removeComments": true,
-    "strict": true
+    "strict": true,
+    "module": "commonjs"
   },
   "include": ["src/**/*"],
   "exclude": ["./node_modules/"]
