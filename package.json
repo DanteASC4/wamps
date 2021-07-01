@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev src/wams.ts",
+    "clean": "rimraf dist",
+    "start": "node dist/wams.js",
+    "go": "yarn clean && yarn build && yarn start"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.11",
+    "@types/node": "^15.12.5",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.7",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}

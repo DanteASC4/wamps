@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "ignorePatterns": [
+    "/.next",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "next.config.js"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-await-in-loop": "error",
+    "no-useless-concat": "error",
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "no-else-return": "error",
+    "no-script-url": "error",
+    "no-duplicate-imports": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": "off",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "@typescript-eslint/no-use-before-define": "error"
+  }
+}
