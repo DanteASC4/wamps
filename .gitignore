@@ -1,2 +1,9 @@
+# dirs
 /node_modules
 /dist
+
+# singles
+.eslintcache
+mps.yaml
+INTERNAL.md
+yarn-error.log

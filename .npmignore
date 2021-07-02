@@ -1,0 +1,10 @@
+# dirs
+src/
+.husky/
+
+# single files
+.eslintignore
+.eslintrc.json
+.gitignore
+tsconfig.json
+yarn-error.log

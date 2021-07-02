@@ -1,22 +1,54 @@
 {
+  "name": "wamps",
+  "author": "Dante Rivera <zexovon@gmail.com>",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "A super small tool to view package.json scripts easily from command line, and soon you'll optionally be able to read a YAML file describing package.json scripts by the name of `mps.yaml`",
+  "main": "bin/wamps.js",
+  "bin": {
+    "wamps": "bin/wamps.js"
+  },
+  "homepage": "https://github.com/DanteASC4/wamps",
+  "keywords": [
+    "cli",
+    "utility",
+    "package.json"
+  ],
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node-dev src/wams.ts",
-    "clean": "rimraf dist",
-    "start": "node dist/wams.js",
-    "go": "yarn clean && yarn build && yarn start"
+    "dev": "ts-node-dev src/wamps.ts",
+    "clean": "rimraf bin",
+    "transpile": "tsc",
+    "build": "yarn clean && tsc",
+    "start": "node bin/wamps.js",
+    "go": "yarn clean && yarn build && yarn start",
+    "testg": "ts-node-dev src/generate.ts",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.11",
+    "@types/js-yaml": "^4.0.1",
     "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "ts-node-dev": "^1.1.7",
+    "typehole": "^1.6.3",
     "typescript": "^4.3.4"
   },
   "dependencies": {
-    "fs-extra": "^10.0.0"
+    "commander": "^8.0.0",
+    "fs-extra": "^10.0.0",
+    "js-yaml": "^4.1.0",
+    "ora": "^5.4.1",
+    "remove": "^0.1.5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
