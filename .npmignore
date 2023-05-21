@@ -8,3 +8,5 @@ src/
 .gitignore
 tsconfig.json
 yarn-error.log
+pnpm-lock.yaml
+.prettierrc.json
