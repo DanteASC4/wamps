@@ -2,7 +2,7 @@
   "name": "wamps",
   "author": "Dante Rivera <zexovon@gmail.com>",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A super small tool to view package.json scripts easily from command line, and soon you'll optionally be able to read a YAML file describing package.json scripts by the name of `mps.yaml`",
   "main": "bin/wamps.js",
   "bin": {
