@@ -21,7 +21,7 @@ if (!scriptsObj) {
 const data = [];
 
 for (const prop in scriptsObj) {
-  data.push([prop, scriptsObj[prop]]);
+  data.push([pc.cyan(prop), scriptsObj[prop]]);
 }
 
 console.log(
