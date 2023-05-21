@@ -2,7 +2,7 @@
   "name": "wamps",
   "author": "Dante Rivera <zexovon@gmail.com>",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A super small tool to view package.json scripts easily from command line, and soon you'll optionally be able to read a YAML file describing package.json scripts by the name of `mps.yaml`",
   "main": "bin/wamps.js",
   "bin": {
@@ -18,9 +18,10 @@
     "dev": "ts-node-dev src/wamps.ts",
     "clean": "rimraf bin",
     "transpile": "tsc",
-    "build": "yarn clean && tsc",
+    "build": "pnpm clean && tsc",
+    "buildfull": "esbuild src/wamps.ts --bundle --minify --platform=node --outfile=./bin/wamps.js",
     "start": "node bin/wamps.js",
-    "go": "yarn clean && yarn build && yarn start",
+    "go": "pnpm clean && pnpm build && pnpm start",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "@types/node": "^15.12.5",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
+    "esbuild": "^0.17.19",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -39,7 +41,9 @@
     "typescript": "^4.3.4"
   },
   "dependencies": {
-    "fs-extra": "^10.0.0"
+    "fs-extra": "^10.0.0",
+    "picocolors": "^1.0.0",
+    "table": "^6.8.1"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"

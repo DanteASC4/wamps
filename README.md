@@ -1,10 +1,12 @@
-<img src="https://i.imgur.com/rb5qv53.png" align="center" width="250" height="250">
+<p align="center">
+  <img src="https://i.imgur.com/rb5qv53.png" width="250" height="250">
+</p>
 
 # wamps
 
 wamps = what are my package scripts
 
-A super small tool to view package.json scripts easily from command line, and soon you'll optionally be able to read a YAML file describing package.json scripts by the name of `mps.yaml`
+A small tool to view package.json scripts easily from command line. Will eventually be tiny once I get around to writing my own version of the table module.
 
 ## Installation
 
