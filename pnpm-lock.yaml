@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   fs-extra:
     specifier: ^10.0.0
@@ -16,7 +20,7 @@ devDependencies:
     specifier: ^9.0.11
     version: 9.0.13
   '@types/node':
-    specifier: ^15.12.5
+    specifier: ^15.14.9
     version: 15.14.9
   '@typescript-eslint/eslint-plugin':
     specifier: ^4.28.1
